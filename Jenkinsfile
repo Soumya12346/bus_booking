@@ -13,6 +13,12 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
+        stage('Run Locally') {
+        steps {
+                sh 'java -jar target/simple-parcel-service-app-1.0-SNAPSHOT.jar &'
+                sleep 30
+            }
+         }
         stage('deploy'){
             steps{
                sh 'ssh root@172.31.46.201'
