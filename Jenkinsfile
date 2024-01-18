@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                sh 'rm -rf bus_booking.git'
+                sh 'rm -rf bus_booking'
                 sh 'https://github.com/Soumya12346/bus_booking.git'
             }
         }
