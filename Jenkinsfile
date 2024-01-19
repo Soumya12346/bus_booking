@@ -56,6 +56,6 @@ pipeline {
                     rtPublishBuildInfo serverId: "Artifact"
                 }
             }
-    }
-    }
+        }
+    }
 }
