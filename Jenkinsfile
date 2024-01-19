@@ -55,7 +55,7 @@ pipeline {
                     // For my understanding to publish build info
                     rtPublishBuildInfo serverId: "Artifact"
                 }
-            }
+            }
     }
     }
 }
